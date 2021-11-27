@@ -11,14 +11,24 @@
       "points": 4
     },
     {
-      "name": "Clean build",
+      "name": "Check build workflow present",
       "setup": "",
-      "run": "mvn clean package",
+      "run": "ls .github/workflows/build-workflow.yml",
       "input": "",
       "output": "",
       "comparison": "included",
       "timeout": 10,
       "points": 4
+    },
+    {
+      "name": "Check env",
+      "setup": "",
+      "run": "env",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
     }
   ]
 }
